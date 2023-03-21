@@ -10,4 +10,4 @@
  
 פלטפורמה: PC
 
-
+[לפירוט הרכיבים](https://github.com/Elon-and-Yosef-games-design/My-Robot/blob/main/formal-elements.md)
