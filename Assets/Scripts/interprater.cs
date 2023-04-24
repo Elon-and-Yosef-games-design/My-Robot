@@ -25,6 +25,10 @@ public class interprater : MonoBehaviour
     }
     public void compile()
     {
+        int_varibles.Clear();
+        string_varibles.Clear();
+        float_varibles.Clear();
+        bool_varibles.Clear();
         StartCoroutine(run_animation());
        
     }
@@ -63,17 +67,27 @@ public class interprater : MonoBehaviour
         string type = parts[0].Split(" ")[0];
         string Value = parts[1].Trim();
         string  varName = parts[0].Split(" ")[1];
-        switch (type)
+        try
         {
-            case "int":
-                int_varibles.Add(varName, int.Parse(Value));
-                break;
-            case "float":
-                break;
-            case "string":
-                break;
-            case "bool":
-                break;
+            switch (type)
+            {
+                case "int":
+                    int_varibles.Add(varName, int.Parse(Value));
+                    break;
+                case "float":
+                    float_varibles.Add(varName, float.Parse(Value));
+                    break;
+                case "string":
+                    string_varibles.Add(varName, Value);
+                    break;
+                case "bool":
+                    bool_varibles.Add(varName, bool.Parse(Value));
+                    break;
+            }
+        }
+        catch(Exception e)
+        {
+            stdout.text = ">> wrong type assignment decleration";
         }
         //varibles.Add(varName, varValue);
     }
@@ -81,15 +95,18 @@ public class interprater : MonoBehaviour
 
     void print_func(string s)
     {
+        int startIndex = s.IndexOf("(") + 1;
+        int endIndex = s.LastIndexOf(")");
+        s = s.Substring(startIndex, endIndex - startIndex);
         string[] parts = s.Split(',');
         string output = "";
 
         foreach (string part in parts)
         {
-            int startIndex = part.IndexOf("\"") ; // Find the index of the first opening parenthesis
+            startIndex = part.IndexOf("\"") ; // Find the index of the first opening parenthesis
             if (startIndex >= 0) 
             { 
-                int endIndex = part.LastIndexOf("\"")+1; // Find the index of the last closing parenthesis
+                endIndex = part.LastIndexOf("\"")+1; // Find the index of the last closing parenthesis
                 string temp = part.Substring(startIndex, endIndex - startIndex);
                 if (temp.StartsWith("\"") && temp.EndsWith("\""))
                 {
