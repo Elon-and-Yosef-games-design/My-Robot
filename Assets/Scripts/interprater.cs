@@ -34,7 +34,7 @@ public class interprater : MonoBehaviour
         yield return new WaitForSeconds(print_animation_duration);
         stdout.text += ">> ....\n";
         yield return new WaitForSeconds(print_animation_duration);
-        stdout.text = "";
+        stdout.text = ">>";
         cmd(input_str);
     }
 
@@ -94,13 +94,13 @@ public class interprater : MonoBehaviour
                 if (temp.StartsWith("\"") && temp.EndsWith("\""))
                 {
                     // This part is a string literal
-                    output += part.Substring(1, part.Length - 2);
+                    output += temp.Substring(1, temp.Length - 2);
                 }
             }
             else
             {
                 // This part is a variable
-                string varName = Regex.Replace(parts[0], @"[^\w]", "").Trim();//part.Trim();
+                string varName = Regex.Replace(part, @"[^\w]", "").Trim();//part.Trim();
 
                 if (int_varibles.ContainsKey(varName))
                 {
@@ -125,7 +125,7 @@ public class interprater : MonoBehaviour
             }
         }
 
-        stdout.text += ">> " + output + "\n";
+        stdout.text += "" + output + "\n>>";
         Debug.Log(output);
     }
 
