@@ -2,6 +2,8 @@
 
 # כותרת ראשית: My Robot
 
+Check out our game at [https://elonnyosef.itch.io/robot](https://elonnyosef.itch.io/robot)
+
 **שחרר את כישורי הקידוד שלך כדי להוביל מרד רובוטי במשחק הרפתקאות סוחף זה שבו אתה משתלט על רובוט אסור ונלחם נגד משטר דיכוי.**
 
 ## מהות המשחק
