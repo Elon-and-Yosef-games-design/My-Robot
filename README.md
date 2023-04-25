@@ -4,7 +4,7 @@
 
 Check out our game at [https://elonnyosef.itch.io/robot](https://elonnyosef.itch.io/robot)
 
-For assignment number 5, short summary what we've done:
+**For assignment number 5, short summary what we've done:**
 
 In our captivating 2D game, we have developed an immersive environment where the player can explore a map by controlling their character with keyboard arrow buttons. As they traverse the landscape, they will encounter a computer object with an integrated collider. Upon interacting with this computer, a new scene is seamlessly displayed above the current one, thanks to Unity's change scenes mechanism, providing an interactive interface for the player to engage with.
 
