@@ -10,6 +10,7 @@ public class interprater : MonoBehaviour
     [SerializeField] TMP_InputField stdout;
     [SerializeField] float print_animation_duration = 2f;
 
+   
 
     string input_str; //string i get from the editor willing to split
     Dictionary<string, int> int_varibles = new Dictionary<string, int>();
@@ -17,7 +18,16 @@ public class interprater : MonoBehaviour
     Dictionary<string, float> float_varibles = new Dictionary<string, float>();
     Dictionary<string, bool> bool_varibles = new Dictionary<string, bool>();
 
+    List<string> used_module = new List<string>();
+
     string[] reserved_words = { "if", "else", "print" };
+
+    public void save()
+    {
+        Code new_code = Code.CreateInstance<Code>();
+        new_code.write_code(input_str);
+        //when there will be an inventorty we could save the code and than upload it to the robot
+    }
 
     public void read_input_editor(string s)
     {
@@ -57,6 +67,14 @@ public class interprater : MonoBehaviour
             {
                 varible_assign(word);
             }
+            else if (word.Contains("import"))
+            {
+                modules_import(word.Split(new char[] { ' ' })[1]);
+            }
+
+            ////modules handaling
+            ///search for functions of modules
+            
             Debug.Log(word);
         }
     }
@@ -87,7 +105,7 @@ public class interprater : MonoBehaviour
         }
         catch(Exception e)
         {
-            stdout.text = ">> wrong type assignment decleration";
+            stdout.text = "wrong type assignment decleration\n>>";
         }
         //varibles.Add(varName, varValue);
     }
@@ -146,33 +164,25 @@ public class interprater : MonoBehaviour
         Debug.Log(output);
     }
 
-    /* void print_func(string s)
-     {
-         string myString = s; // Input string
-         int startIndex = myString.IndexOf("\"") + 1; // Find the index of the first double quote
-         int endIndex = myString.LastIndexOf("\""); // Find the index of the last double quote
-         string output = myString.Substring(startIndex, endIndex - startIndex); // Extract the substring
 
-         // Find and replace variable placeholders
-         foreach (var kvp in int_varibles)
-         {
-             string varName = kvp.Key;
-             object varValue = kvp.Value;
-             output = output.Replace(varName, varValue.ToString());
-         }
-
-         stdout.text += ">> " + output + "\n";
-         Debug.Log(output);
-     }*/
-    /*
-    void print_func(string s)
+    void modules_import(string modoul_name)
     {
-        string myString = s; // Input string
-        int startIndex = myString.IndexOf("\"") + 1; // Find the index of the first double quote
-        int endIndex = myString.LastIndexOf("\""); // Find the index of the last double quote
-        string output = myString.Substring(startIndex, endIndex - startIndex); // Extract the substring
-        stdout.text += ">> " + output+"\n";
-        Debug.LogAssertion(output);
-    }*/
+        switch (modoul_name)
+        {
+            case "Voice_modoule":
+                used_module.Add(modoul_name);
+                break;
+            default:
+                stdout.text += "no such module" + modoul_name + "\n>>";
+                break;
+        }
+    }
 
+    void module_handling(string modoul_name)
+    {
+        switch(modoul_name)
+        {
+            //case 
+        }
+    }
 }
