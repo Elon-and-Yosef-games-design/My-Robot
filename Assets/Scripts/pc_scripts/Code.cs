@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Script", menuName = "ScriptableObjects/New_script", order = 1)]
 public class Code : ScriptableObject
 {
-    [SerializeField]string code;
+    [SerializeField] string script_name;
+    [SerializeField][TextArea(15, 20)] string code;
 
     public void write_code(string s)
     {

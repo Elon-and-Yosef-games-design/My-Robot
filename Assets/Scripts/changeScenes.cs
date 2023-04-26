@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class changeScenes : MonoBehaviour
 {
 
-    public void MoveToScene(string sceneName)
+    public void TurnoffPc()
     {
-        SceneManager.LoadScene("Section2");
+
+        _ = SceneManager.UnloadScene("pc");
     }
+   
 }

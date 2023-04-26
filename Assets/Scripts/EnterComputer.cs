@@ -7,8 +7,9 @@ public class EnterComputer : MonoBehaviour
 {
     private bool enterAllowed;
     private string previousScene;
-    [SerializeField] public string sceneToLoad;
-    [SerializeField] public GameObject computer;
+    bool inpc = false;
+    [SerializeField] public string sceneToLoad = "Pc";
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +17,6 @@ public class EnterComputer : MonoBehaviour
         //Debug.Log(collision.GameObject.name);
         if (collision.GetComponent<computerObject>())
         {
-            sceneToLoad = "Pc";
             enterAllowed = true;
         }
         // else if (collision.GetComponent<BrownDoor>())
@@ -28,6 +28,7 @@ public class EnterComputer : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        inpc = false;
         Debug.Log("Player is no longer touching the computer.");
         // if (collision.GetComponent<computerObject>() )//|| collision.GetComponent<BrownDoor>())
         // {
@@ -37,10 +38,12 @@ public class EnterComputer : MonoBehaviour
 
     private void Update()
     {
-        if (enterAllowed && Input.GetKey(KeyCode.Return))
+        if (enterAllowed && Input.GetKey(KeyCode.Return) && !inpc)
         {
+            inpc = true;
+
             previousScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(sceneToLoad);
+            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
         }
 
         // if (Input.GetKeyDown(KeyCode.Q))

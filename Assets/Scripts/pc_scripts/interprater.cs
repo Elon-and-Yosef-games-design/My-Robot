@@ -44,7 +44,7 @@ public class interprater : MonoBehaviour
     }
     IEnumerator run_animation()
     {
-        stdout.text = ">> python p1.py\n";
+        stdout.text = ">> pybot p1.py\n";
         yield return new WaitForSeconds(print_animation_duration);
         stdout.text += ">> ....\n";
         yield return new WaitForSeconds(print_animation_duration);

@@ -932,8 +932,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 413212750}
         m_TargetAssemblyTypeName: changeScenes, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 5
+        m_MethodName: TurnoffPc
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 694455362}
   - component: {fileID: 694455361}
   m_Layer: 5
-  m_Name: run_button
+  m_Name: IDE_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
