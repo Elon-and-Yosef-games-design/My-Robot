@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class changeScenes : MonoBehaviour
 {
+    EnterComputer e;
 
-    public void TurnoffPc()
+    private void Start()
     {
 
-        _ = SceneManager.UnloadScene("pc");
+        e = new EnterComputer();
+
+    }
+    public void TurnoffPc()
+    {
+        e.DestroySceneAndEnableScript();
+        //_ = SceneManager.UnloadScene("pc");
     }
    
 }

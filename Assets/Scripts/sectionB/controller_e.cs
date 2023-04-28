@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 
 public class controller_e : MonoBehaviour
 {
@@ -28,6 +28,7 @@ public class controller_e : MonoBehaviour
     [SerializeField]
     InputAction run = new InputAction();
 
+
     int run_flag = 0;
     float multiplier_run;
 
@@ -52,6 +53,7 @@ public class controller_e : MonoBehaviour
     {
         if (run.IsPressed() && run_flag == 0)
         {
+
             multiplier_run = multiplier;
             run_flag = 1;
         }
@@ -68,5 +70,7 @@ public class controller_e : MonoBehaviour
             transform.position += new Vector3(-1 * multiplier_run * speed * Time.deltaTime, 0, 0);
         if (moveRight.IsPressed())
             transform.position += new Vector3(multiplier_run * speed * Time.deltaTime, 0, 0);
+
+        
     }
 }
