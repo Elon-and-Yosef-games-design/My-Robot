@@ -1,0 +1,1785 @@
+fileFormatVersion: 2
+guid: 0babdec38962f4b44a3e37b86af5a02e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: room_props_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 340
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd30c7b49172b7940b91e8e5a451a8c6
+      internalID: -365701888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 323
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f47af2d879034abdd5322f5966c9f
+      internalID: -1323729817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 323
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8257a13a6b46e43b982bff7f7c50fc
+      internalID: -1335781851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 322
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c999ddb38717a143abb2c57e05eccdb
+      internalID: 675219691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 321
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d525f7c426c147993e444c1b2b4b6
+      internalID: -2009441090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 324
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac36454b88894946ba02f0e5f58cb4f
+      internalID: 26968723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 322
+        width: 62
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fb907ca1677ab458d53070e0405e6a
+      internalID: -213494920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 324
+        width: 78
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4879612, y: 0.46243775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa325a5637aac847a5c1ce6285a5695
+      internalID: 1107842880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 323
+        width: 78
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6c0d1a987be5e4aa9d0bf21e38bd35
+      internalID: 1083019170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 324
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1265cac015e314594befa3bac41bf3
+      internalID: -834367760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 296
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbc71f4fe630114c9366d8c8efebec6
+      internalID: -492721156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 296
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41018621abb92dd45808b66299ee5c14
+      internalID: 1012913886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 296
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7663ddf08f5b247b332103ec0d2145
+      internalID: -303374130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 296
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6316b8711e4cde546a70c5bc43d9eb98
+      internalID: -45373755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_14
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 292
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b6ed033f300a4bb8556fecb39f66e
+      internalID: 619005161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 299
+        width: 28
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5080686, y: 0.70856416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064f0c9a5f66af340a2cb1b5a9f08d99
+      internalID: -1997549465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_16
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 299
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a46410e8e534aa4db3a0b666ca0b590
+      internalID: -1041174981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_17
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 292
+        width: 78
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7253699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fa3595f5466ff46998f4cde5a9a3d3
+      internalID: -1063096951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_18
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 292
+        width: 78
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e30abe777fe3f1479ea4fe9c2f41e69
+      internalID: 131240646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 259
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975300af9c623114db37f638a4f50bdd
+      internalID: -1804295673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 267
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee5a63cf248ae849886d415f861b884
+      internalID: -69090448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 259
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29f3013202bf73499ba4e300bf39601
+      internalID: 356340611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 258
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b4a13970a278745be6839062ef2aa1
+      internalID: 744270469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_23
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 258
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f577a430dc40ad245aefc896a0312a76
+      internalID: -1558973747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_24
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a7e26ebcbcd874fbed8091e238f1e6
+      internalID: -318206492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_25
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 259
+        width: 78
+        height: 25
+      alignment: 9
+      pivot: {x: 0.50777495, y: 0.9827832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b47d5b351be62c459c7413b53dfbaec
+      internalID: 1055211975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_26
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 260
+        width: 78
+        height: 25
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424e02aff4126f54883fa080fad2d32b
+      internalID: -88254524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_27
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 259
+        width: 14
+        height: 7
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8e6edbd8a268f4fa3a43dce6ddd0e8
+      internalID: -367611493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_28
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 260
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0d63955a6332f409e58b234a58530c
+      internalID: 779281337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 226
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca1fa87d247ab1468e69e945ca62cc2
+      internalID: -1479923322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 234
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0c32b5281164d4187eb9099d77ec60
+      internalID: 443128312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 226
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d570c747d27b67f4a87cc6d5a743a270
+      internalID: 1355140172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_32
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 226
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e59aa92fb220754ba292f9e7a9d9833
+      internalID: 1494526655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_33
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 226
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036a4a67c33e72144a1df002f1a0b4a1
+      internalID: -1683443449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_34
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 230
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e23e1b41d62ee49840ee55b7d67c80
+      internalID: -412952364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_35
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 225
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec226c760fd97864697ff15482e0e444
+      internalID: 2082570832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_36
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 226
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0.4888622, y: 2.449585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b474d682fa17f7c40bf1e91ebf3f51f1
+      internalID: 462027627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 227
+        width: 4
+        height: 5
+      alignment: 9
+      pivot: {x: 3.814293, y: 2.8862884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de99701763dd0b449a8418f72307b40
+      internalID: 1010625097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 194
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb58f4b51aab704b8ea55b4f19c6f8d
+      internalID: 1995730110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_39
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 194
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624a392e88953d24f8e3c23aaa1768ca
+      internalID: -2069875449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_40
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 193
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb167bf8627e784eb3e956e806a3acf
+      internalID: -1438464549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_41
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 136
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ea5d700cdad334eb0733ec3b8c6286
+      internalID: -1607938019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_42
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 136
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34e79c6c1c6ce14c90808d8f431f3c0
+      internalID: 988725651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_43
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 134
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce81b261f8dcec46bebb667d314276c
+      internalID: -748895947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_44
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 161
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290471ca8a8f64c4e84566c57c93c507
+      internalID: 1273421187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_45
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 161
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bd012228d257749bdd4417dfe114f8
+      internalID: 1903078611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_46
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 161
+        width: 59
+        height: 29
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7243b2d32408d4da856fffd3be6742
+      internalID: 1515210430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_47
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 160
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9608743891a7cee4ba7894e5ed566faf
+      internalID: -591858731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_48
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 161
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c27239409006604f9bcbf2b13104843
+      internalID: 800075636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_49
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 179
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532d0a40cf035c84380386355e9e5e5a
+      internalID: -1378725753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_50
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 172
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b7571988acc2b40aed00d8e5f7c5d1
+      internalID: 4388317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_51
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 166
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375803b387e5e8048ac763c40aced5f3
+      internalID: -1293151761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_52
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 151
+        width: 58
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da76a571bfe9684c8e9cdf04eb99eac
+      internalID: -1145897836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_53
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 128
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0510b348890fb854aafd9999c3ce6ba4
+      internalID: -16678298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 137
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5358fefa6945f54da8a929f92e96d29
+      internalID: -456405755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_55
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 64
+        width: 42
+        height: 46
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d0f66c67f6343419ebccb2701bf41d
+      internalID: 19129732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ced74527456b184d9b766eee9c1eacb
+      internalID: -2032442227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_57
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 96
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.53427726, y: 0.054386955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa2a0347e7b39746a8823b8347938b9
+      internalID: 1752538711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_58
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 96
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ac53bc8f820b04c8291db24584c6fa
+      internalID: 2085224708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_59
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 79
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec053d46897ae994c9b2c9c23c7bcba1
+      internalID: 964392897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_60
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 79
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44a8bd4991f178439f77a36c08b16df
+      internalID: -1560690075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_61
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 106
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8de40f9b1381e74a8c218c1d2bb8694
+      internalID: -1886114585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_62
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 106
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a06ad637502ca24c86dac384fa16d09
+      internalID: 570239486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_63
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 106
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43461d9be9248774cb3beb2276ac80c2
+      internalID: -915204463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_64
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 106
+        width: 11
+        height: 10
+      alignment: 9
+      pivot: {x: -0.73059916, y: 1.5152451}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044dfb7212f1bac4f815b368a5cd6f30
+      internalID: 2055130400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_65
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 77
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7679d4d115d5e45bc711cf48bcd63d
+      internalID: 444581321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_66
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 10
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88f8d0e56c50b640908d578d480950e
+      internalID: 1872060386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_67
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 17
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a7642bc665e7147af076c66f8721b8
+      internalID: 1853422437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_68
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 17
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d73a9e1cae36bf4e929fa784d5ff8b5
+      internalID: 478895684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_69
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 44
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6552ec13b88fe428a1673efd71d6be
+      internalID: -1333884708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_70
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 12
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7354735e673b74540a82960c6d81a0ae
+      internalID: -1917428813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_71
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 256
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5009489, y: -0.057266712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e50e1ead8e70fb47b253c1978facceb
+      internalID: 1234200075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_72
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422fd08733a91a044b12fc3ea08257bd
+      internalID: -715925047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_73
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 221
+        width: 32
+        height: 35
+      alignment: 9
+      pivot: {x: 0.50011444, y: -0.026953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0642322e491bd94494e6e94e4757979
+      internalID: 504725864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_props_74
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 221
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce01ded2486a7d9438cdf8efb77ec6c0
+      internalID: -1012361692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      room_props_51: -1293151761
+      room_props_34: -412952364
+      room_props_7: 1107842880
+      room_props_40: -1438464549
+      room_props_20: -69090448
+      room_props_69: -1333884708
+      room_props_49: -1378725753
+      room_props_8: 1083019170
+      room_props_43: -748895947
+      room_props_58: 2085224708
+      room_props_26: -88254524
+      room_props_22: 744270469
+      room_props_39: -2069875449
+      room_props_18: 131240646
+      room_props_4: -2009441090
+      room_props_55: 19129732
+      room_props_14: 619005161
+      room_props_32: 1494526655
+      room_props_48: 800075636
+      room_props_17: -1063096951
+      room_props_19: -1804295673
+      room_props_41: -1607938019
+      room_props_47: -591858731
+      room_props_30: 443128312
+      room_props_45: 1903078611
+      room_props_12: -303374130
+      room_props_38: 1995730110
+      room_props_42: 988725651
+      room_props_54: -456405755
+      room_props_70: -1917428813
+      room_props_5: 26968723
+      room_props_25: 1055211975
+      room_props_31: 1355140172
+      room_props_44: 1273421187
+      room_props_36: 462027627
+      room_props_29: -1479923322
+      room_props_6: -213494920
+      room_props_50: 4388317
+      room_props_0: -365701888
+      room_props_35: 2082570832
+      room_props_60: -1560690075
+      room_props_64: 2055130400
+      room_props_16: -1041174981
+      room_props_23: -1558973747
+      room_props_37: 1010625097
+      room_props_33: -1683443449
+      room_props_46: 1515210430
+      room_props_56: -2032442227
+      room_props_28: 779281337
+      room_props_59: 964392897
+      room_props_74: -1012361692
+      room_props_65: 444581321
+      room_props_10: -492721156
+      room_props_62: 570239486
+      room_props_9: -834367760
+      room_props_13: -45373755
+      room_props_15: -1997549465
+      room_props_52: -1145897836
+      room_props_24: -318206492
+      room_props_67: 1853422437
+      room_props_2: -1335781851
+      room_props_68: 478895684
+      room_props_1: -1323729817
+      room_props_27: -367611493
+      room_props_3: 675219691
+      room_props_63: -915204463
+      room_props_66: 1872060386
+      room_props_73: 504725864
+      room_props_72: -715925047
+      room_props_71: 1234200075
+      room_props_57: 1752538711
+      room_props_11: 1012913886
+      room_props_53: -16678298
+      room_props_61: -1886114585
+      room_props_21: 356340611
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 public class interprater : MonoBehaviour
 {
     [SerializeField] TMP_InputField stdout;
+    [SerializeField] TMP_InputField stdin;
     [SerializeField] float print_animation_duration = 2f;
 
    
@@ -44,7 +45,7 @@ public class interprater : MonoBehaviour
     }
     IEnumerator run_animation()
     {
-        stdout.text = ">> python p1.py\n";
+        stdout.text = ">> pybot p1.py\n";
         yield return new WaitForSeconds(print_animation_duration);
         stdout.text += ">> ....\n";
         yield return new WaitForSeconds(print_animation_duration);
@@ -136,7 +137,10 @@ public class interprater : MonoBehaviour
             {
                 // This part is a variable
                 string varName = Regex.Replace(part, @"[^\w]", "").Trim();//part.Trim();
+                if(part.Contains())
+                {
 
+                }
                 if (int_varibles.ContainsKey(varName))
                 {
                     output += int_varibles[varName].ToString();

@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41def8edc1464a4bbb134f05a9e72ec, type: 3}
   m_Name: simple_lcd_output
   m_EditorClassIdentifier: 
-  code: print("hello world")
+  script_name: hello_world
+  code: 'string name = "Yosef"
+
+
+    print("hello my name is ", name)'

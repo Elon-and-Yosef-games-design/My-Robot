@@ -44,11 +44,11 @@ public class Robot_interprater : MonoBehaviour
     IEnumerator run_animation()
     {
         
-        stdout.text = ">> python p1.py\n";
+        stdout.text = "$ python"+script.name+".pyb\n";
         yield return new WaitForSeconds(print_animation_duration);
-        stdout.text += ">> ....\n";
+        stdout.text += "$ ....\n";
         yield return new WaitForSeconds(print_animation_duration);
-        stdout.text = ">> ";
+        stdout.text = " ";
         cmd(input_str);
     }
 
@@ -160,7 +160,7 @@ public class Robot_interprater : MonoBehaviour
             }
         }
 
-        stdout.text += "" + output + "\n>>";
+        stdout.text += "" + output + "\n ";
         Debug.Log(output);
     }
 
@@ -173,7 +173,7 @@ public class Robot_interprater : MonoBehaviour
                 used_module.Add(modoul_name);
                 break;
             default:
-                stdout.text += "no such module" + modoul_name + "\n>>";
+                stdout.text += "no such module" + modoul_name + "\n ";
                 break;
         }
     }
