@@ -137,10 +137,7 @@ public class interprater : MonoBehaviour
             {
                 // This part is a variable
                 string varName = Regex.Replace(part, @"[^\w]", "").Trim();//part.Trim();
-                if(part.Contains())
-                {
 
-                }
                 if (int_varibles.ContainsKey(varName))
                 {
                     output += int_varibles[varName].ToString();
