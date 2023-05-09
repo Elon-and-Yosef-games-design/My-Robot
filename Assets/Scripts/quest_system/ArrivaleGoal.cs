@@ -6,6 +6,12 @@ public class ArrivaleGoal : questGoal
 {
 
     public string area { get; set; }
+    
+    public override void Init()
+    {
+        base.Init();
+        
+    }
 
     /// <summary>
     /// 
@@ -24,10 +30,18 @@ public class ArrivaleGoal : questGoal
         this.requierdAmount = requierdAmount;
     }
 
-    void arraived(string arae)
+    /// <summary>
+    /// this function is update the mission prograss when the player got to the requierd
+    /// loaction.
+    /// work the best with detect which object plyer collided with and give the name of the object to the 
+    /// function
+    /// </summary>
+    /// <param name="arae">the name of the area to arrive to</param>
+    public void arrived(string arae)
     {
         if(area == this.area)
         {
+            //Debug.Log("good, the area is it " + this.area);
             this.currentAmout++;
             Evaluate();
         }

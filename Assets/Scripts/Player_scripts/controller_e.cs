@@ -33,6 +33,12 @@ public class controller_e : MonoBehaviour
 
     [SerializeField]
     QuestGiver questgiver;
+
+    [SerializeField]
+    InputAction Action = new InputAction();
+
+
+
     int run_flag = 0;
     float multiplier_run;
 
@@ -45,6 +51,26 @@ public class controller_e : MonoBehaviour
         moveRight.Enable();
         run.Enable();
         open_quest.Enable();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collide");
+
+        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        {
+            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
+            ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
+        }
+        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        {
+            Debug.Log("press E to interact!\n");
+            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
+            if (Action.WasPressedThisFrame())
+            {
+                ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
+            }
+        }
     }
 
     private void Start()
@@ -87,7 +113,5 @@ public class controller_e : MonoBehaviour
                 questgiver.open_window();
             }
         }
-           
-        
     }
 }

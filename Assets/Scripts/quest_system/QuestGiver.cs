@@ -21,22 +21,24 @@ public class QuestGiver : MonoBehaviour
     public TextMeshProUGUI coin_text;
     public GameObject coin_icon;
 
-    Quest current_quest;
+    public Quest current_quest;
 
     public void nextQuest()
     {
-        if (current_quest.goals[0].completed)
-        {
-            current_quest.goals.RemoveAt(0);
-            if (current_quest.Completed)
+        if(current_quest.goals.Count > 0)
+            if (current_quest.goals[0].completed)
             {
-                current_quest.GiveRewarde();
-                if (quests.Count > i + 1)
+                Debug.Log("goal completed");
+                current_quest.goals.RemoveAt(0);
+                if (current_quest.Completed)
                 {
-                    i++;
+                    current_quest.GiveRewarde();
+                    if (quests.Count > i + 1)
+                    {
+                        i++;
+                    }
                 }
             }
-        }
     }
     
     void AssigneQuest()
@@ -50,16 +52,29 @@ public class QuestGiver : MonoBehaviour
     }
     public void open_window()
     {
-        questWindow.SetActive(true);
-        title_text.text = current_quest.title;
-        discription_text.text = current_quest.description;
-        Goal_discrip_text.text = current_quest.goals[0].description;
-        if (current_quest.coinReward > 0)
+        try
         {
-           coin_text.text = current_quest.coinReward.ToString();
-            coin_icon.SetActive(true);
+            Debug.Log("current_quest.goals[0].description: " + current_quest.goals[0].description);
+            questWindow.SetActive(true);
+            title_text.text = current_quest.title;
+            discription_text.text = current_quest.description;
+            Goal_discrip_text.text = current_quest.goals[0].description;
+            if (current_quest.coinReward > 0)
+            {
+                coin_text.text = current_quest.coinReward.ToString();
+                coin_icon.SetActive(true);
+            }
+            else { coin_icon.SetActive(false); }
         }
-        else { coin_icon.SetActive(false); }
+        catch
+        {
+            questWindow.SetActive(true);
+            title_text.text = "No mission Avilible";
+            discription_text.text = "";
+            Goal_discrip_text.text = "";
+            coin_icon.SetActive(false);
+        }
+        
     }
     public void close_window()
     {

@@ -15,10 +15,11 @@ public class EnterComputer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Player is now touching the computer.");
+        
 
         if (collision.tag == "PC")
         {
+            Debug.Log("Player is now touching the computer.");
             enterAllowed = true;
 
             Debug.Log("enterAllowed  "+ enterAllowed);

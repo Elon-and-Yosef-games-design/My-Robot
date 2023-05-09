@@ -9,7 +9,7 @@ using UnityEngine.UI;
 /// this is a main Quest as you can see it contain mini quests.
 /// </summary>
 [System.Serializable]
-public class Quest :MonoBehaviour
+public class Quest : MonoBehaviour
 {
     bool isActive;
     public string title;
@@ -36,6 +36,7 @@ public class Quest :MonoBehaviour
    public void GiveRewarde()
     {
         Player p = gameObject.transform.parent.GetComponent<Player>();
+        Debug.Log("giving rewarde!");
         // Todo: add item reward handeling
         if (expReward > 0) 
         {
