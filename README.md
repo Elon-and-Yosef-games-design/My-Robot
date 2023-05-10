@@ -29,12 +29,12 @@ challenge of programming, and the thrilling presence of the tracking robot, our
 game offers an engaging and dynamic experience that players can both enjoy and
 learn from.
 
-**שחרר את כישורי הקידוד שלך כדי להוביל מרד רובוטי במשחק הרפתקאות סוחף זה שבו אתה משתלט על רובוט אסור ונלחם נגד משטר דיכוי.**
+**Unleash your coding skills to lead a robotic rebellion in this immersive adventure game where you take control of a forbidden robot and fight against an oppressive regime.**
 
-## מהות המשחק
+## The essence of the game
 
- בעולם דיסוטופי בו משטר אכזרי וטכנופוב שולט. אתה, מתכנת מתחיל, מוצא רובוט ישן במזבלה. באמצעות יכולותיך הטכניות אתה מתקן את הרובוט ויוצא למסע במטרה להפיל את המשטר ולשחרר את המדינה מהשלטון שמונע כל התקדמות טכנולוגית. באמצעות פתרון חידות תכנות והתנגדות פיזית לחברי המשטר אתה משפר את הרובוט באמצעות חומרה שאתה קונה, ספריות שאתה מוצא ומתקין ברובוט כדי שתוכל להוסיף לו פונקציות חדשות.
+  In a dystopian world where a brutal and technophobic regime rules. You, a novice programmer, find an old robot in a dump. Using your technical abilities you repair the robot and set out on a journey with the aim of overthrowing the regime and freeing the country from the rule that prevents any technological progress. By solving programming puzzles and physically resisting the members of the regime you improve the robot using hardware you buy, libraries you find and install on the robot so you can add new functions to it.
 
-פלטפורמה: PC, Web
+Platform: PC, Web
 
-[לפירוט הרכיבים](https://github.com/Elon-and-Yosef-games-design/My-Robot/blob/main/formal-elements.md)
+[For details of the components](https://github.com/Elon-and-Yosef-games-design/My-Robot/blob/main/formal-elements.md)
