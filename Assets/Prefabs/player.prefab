@@ -302,15 +302,24 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   open_quest:
-    m_Name: 
+    m_Name: Open_quest
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: 8eae3ae0-283e-4df0-8ab8-9ce25aeed925
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
   questgiver: {fileID: 0}
+  Action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ff28a57c-fcd1-4624-9e84-de0a4d40867c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!114 &7814609049508771708
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,6 +71,7 @@ public class controller_e : MonoBehaviour
                 ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
             }
         }
+
     }
 
     private void Start()
