@@ -1,6 +1,6 @@
 
 
-# כותרת ראשית: My Robot
+# My Robot
 
 Check out our game at [https://elonnyosef.itch.io/robot](https://elonnyosef.itch.io/robot)
 
