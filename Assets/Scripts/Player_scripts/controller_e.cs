@@ -41,7 +41,7 @@ public class controller_e : MonoBehaviour
 
     int run_flag = 0;
     float multiplier_run;
-
+    Collider2D current_collision = null;
 
     private void OnEnable()
     {
@@ -55,22 +55,31 @@ public class controller_e : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collide");
-
-        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        Debug.Log("enter collision");
+        current_collision = collision;
+        try
         {
-            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
-            ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
-        }
-        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
-        {
-            Debug.Log("press E to interact!\n");
-            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
-            if (Action.WasPressedThisFrame())
+            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
             {
+                Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
                 ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
             }
+            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+            {
+                Debug.Log("press E to interact!\n");
+                Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
+          
+            }
         }
+        catch
+        {
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        current_collision = null;
     }
 
     private void Start()
@@ -112,6 +121,23 @@ public class controller_e : MonoBehaviour
             {
                 questgiver.open_window();
             }
+        }
+        if (Action.IsPressed())
+        {
+            Debug.Log("E was pressed!\n");
+            try
+            {
+                if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+                {
+                    if (current_collision != null)
+                        ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
+                }
+            }
+            catch
+            {
+                Debug.Log("dosent have quest");
+            }
+            
         }
     }
 }
