@@ -14,16 +14,15 @@ public class controller_e : MonoBehaviour
 
     [SerializeField]
     InputAction moveUp = new InputAction();
-
     [SerializeField]
     InputAction moveDown = new InputAction();
-
     [SerializeField]
     InputAction moveLeft = new InputAction();
-
     [SerializeField]
     InputAction moveRight = new InputAction();
 
+    [SerializeField]
+    InputAction Vertical_key = new InputAction();
 
     [SerializeField]
     InputAction run = new InputAction();
@@ -37,11 +36,15 @@ public class controller_e : MonoBehaviour
     [SerializeField]
     InputAction Action = new InputAction();
 
+    [SerializeField]Animator animator;
 
 
     int run_flag = 0;
     float multiplier_run;
     Collider2D current_collision = null;
+    float Vertical = 0f;
+    float Horizontal = 0f;
+
 
     private void OnEnable()
     {
@@ -103,10 +106,27 @@ public class controller_e : MonoBehaviour
             multiplier_run = 1;
             run_flag = 0;
         }
+
+         Vertical = Input.GetAxisRaw("Vertical") * speed;
+        animator.SetFloat("vertical_speed", Vertical);
+
+        Horizontal = Input.GetAxisRaw("Horizontal") * speed;
+        animator.SetFloat("horizontal_speed", Horizontal);
+
+        //transform.position.
+        //transform.position.Scale(new Vector3(Vertical,0));
+
         if (moveUp.IsPressed())
+        {
             transform.position += new Vector3(0, multiplier_run * speed * Time.deltaTime, 0);
+
+        }
         if (moveDown.IsPressed())
+        {
             transform.position += new Vector3(0, -1 * multiplier_run * speed * Time.deltaTime, 0);
+            Debug.Log("Vertical" + Vertical);
+           
+        }
         if (moveLeft.IsPressed())
             transform.position += new Vector3(-1 * multiplier_run * speed * Time.deltaTime, 0, 0);
         if (moveRight.IsPressed())
@@ -136,8 +156,10 @@ public class controller_e : MonoBehaviour
             catch
             {
                 Debug.Log("dosent have quest");
-            }
-            
+            }   
+        }
+        else
+        {
         }
     }
 }
