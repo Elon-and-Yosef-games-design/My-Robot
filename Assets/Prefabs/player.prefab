@@ -305,12 +305,21 @@ MonoBehaviour:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: d5ac164b-d289-4c72-8322-396dde286387
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
   questgiver: {fileID: 0}
+  Action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6d284cd7-3b8b-4f2c-99f1-69b06ee6b674
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!114 &7814609049508771708
 MonoBehaviour:
   m_ObjectHideFlags: 0
