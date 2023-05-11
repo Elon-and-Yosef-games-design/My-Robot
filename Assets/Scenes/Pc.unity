@@ -1678,6 +1678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stdout: {fileID: 1800777971}
   stdin: {fileID: 1800777971}
+  print_animation_duration: 0.5
 --- !u!1 &1034296898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,7 +2433,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1031015141}
         m_TargetAssemblyTypeName: interprater_execution_system, Assembly-CSharp
-        m_MethodName: ProcessFiles
+        m_MethodName: compile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

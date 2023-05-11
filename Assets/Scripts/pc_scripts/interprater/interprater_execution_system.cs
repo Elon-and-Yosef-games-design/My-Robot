@@ -20,32 +20,47 @@ public class interprater_execution_system : MonoBehaviour
 {
     [SerializeField] TMP_InputField stdout;
     [SerializeField] TMP_InputField stdin ;
+    [SerializeField] float print_animation_duration = 0.5f;
 
     PythonSharp.Machine machine = new PythonSharp.Machine();
     StringWriter stringWriter = new StringWriter();
 
     string input_str ="";
+
     private void Start()
     {
+        machine.Output = stringWriter;
+    }
+
+
+    public void compile()
+    {
+
+        StartCoroutine(run_animation());
 
     }
-    public void read_input_editor(string s)
+    IEnumerator run_animation()
+    {
+        stringWriter.GetStringBuilder().Clear();
+        stdout.text = ">> pybot p1.py\n";
+        yield return new WaitForSeconds(print_animation_duration);
+        stdout.text += ">> ....\n";
+        yield return new WaitForSeconds(print_animation_duration);
+        stdout.text = ">>";
+        ProcessFiles();
+    }
+
+public void read_input_editor(string s)
     {
         input_str = s;
     }
     public void ProcessFiles()
     {
 
-        // Create a new StringWriter object
-        StringWriter stringWriter = new StringWriter();
-
-        // Set the output property of the machine to the StringWriter
-        machine.Output = stringWriter;
-
         Parser parser = new Parser(input_str);
-            ICommand command = parser.CompileCommandList();
-            command.Execute(machine.Environment);
-            stdout.text = stringWriter.ToString();    
+        ICommand command = parser.CompileCommandList();
+        command.Execute(machine.Environment);
+        stdout.text = stringWriter.ToString();    
          
        // return hasfiles;
     }
