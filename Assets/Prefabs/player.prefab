@@ -344,14 +344,22 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   questgiver: {fileID: 0}
-  Action:
-    m_Name: Action
+  action_key:
+    m_Name: Action_key
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 6d284cd7-3b8b-4f2c-99f1-69b06ee6b674
+    m_Id: bf25752f-5e3b-4c1c-8f7d-ff485060731a
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: b9771f2f-49db-42ee-b733-cdeb89863309
+      m_Path: <Keyboard>/k
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action_key
+      m_Flags: 0
     m_Flags: 0
   animator: {fileID: 2924840604304069982}
 --- !u!114 &7814609049508771708

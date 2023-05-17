@@ -50,9 +50,13 @@ public class interprater_execution_system : MonoBehaviour
         ProcessFiles();
     }
 
-public void read_input_editor(string s)
+    public void read_input_editor(string s)
     {
         input_str = s;
+    }
+    public string get_current_code()
+    {
+        return input_str;
     }
     public void ProcessFiles()
     {

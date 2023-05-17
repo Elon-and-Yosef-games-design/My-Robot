@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 /// <summary>
 /// this is the system that give the quest for the player
@@ -29,21 +30,50 @@ public class QuestGiver : MonoBehaviour
             if (current_quest.goals[0].completed)
             {
                 Debug.Log("goal completed");
-                current_quest.goals.RemoveAt(0);
+                //StartCoroutine(new_misson());
+                
                 if (current_quest.Completed)
                 {
                     current_quest.GiveRewarde();
+
                     if (quests.Count > i + 1)
                     {
+                        Destroy(quest_object.GetComponent(System.Type.GetType(quests[i])));
                         i++;
+                        AssigneQuest();
                     }
+                   
+                    //current_quest = 
                 }
+                else
+                    current_quest.goals.RemoveAt(0);
+               
+                StartCoroutine(new_misson());
             }
     }
     
     void AssigneQuest()
     {
+        /*try
+        {
+            if (quest_object.GetComponent<Quest>().name.Equals(quests[i]))
+            {
+                Debug.Log("assigned quest " + quests[i]);
+            }
+        }
+        catch
+        {
+
+        }*/
+  
         current_quest = (Quest)quest_object.AddComponent(System.Type.GetType(quests[i]));//this will assigned the quest from the list to the quest object
+    }
+
+    IEnumerator new_misson()
+    {
+        open_window();
+        yield return new WaitForSeconds(3);
+        close_window();
     }
 
     public bool isOpen()

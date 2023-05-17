@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class changeScenes : MonoBehaviour
 {
     EnterComputer e;
+    [SerializeField] GameObject pc_screen;
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class changeScenes : MonoBehaviour
     }
     public void TurnoffPc()
     {
+        pc_screen.SetActive(false);
         e.DestroySceneAndEnableScript();
         //_ = SceneManager.UnloadScene("pc");
     }

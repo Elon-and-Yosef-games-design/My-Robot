@@ -39,7 +39,7 @@ public class ArrivaleGoal : questGoal
     /// <param name="arae">the name of the area to arrive to</param>
     public void arrived(string arae)
     {
-        if(area == this.area)
+        if(arae.Equals(this.area))
         {
             //Debug.Log("good, the area is it " + this.area);
             this.currentAmout++;

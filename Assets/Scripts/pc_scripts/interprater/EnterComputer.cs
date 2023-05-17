@@ -11,6 +11,8 @@ public class EnterComputer : MonoBehaviour
     static bool inpc = false;
     [SerializeField] public string sceneToLoad = "Pc";
     [SerializeField] InputAction Action = new InputAction();
+
+    [SerializeField] GameObject pc_screen;
     
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +34,7 @@ public class EnterComputer : MonoBehaviour
 
         if (collision.tag == "PC")
         {
-            inpc = false;
+            enterAllowed = false;
 
             Debug.Log("Player is no longer touching the computer.");
         }
@@ -52,8 +54,9 @@ public class EnterComputer : MonoBehaviour
             Debug.Log("start...");
             inpc = true;
             GetComponent<controller_e>().enabled = false;
+            pc_screen.SetActive(true);
             //previousScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
+            //SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
         }
         if(!inpc)
         {
@@ -71,8 +74,15 @@ public class EnterComputer : MonoBehaviour
     {
 
         inpc = false;
+        try
+        {
+            pc_screen.SetActive(false);
+        }
+        catch
+        {
 
-        SceneManager.UnloadSceneAsync(sceneToLoad);        
+        }
+        //SceneManager.UnloadSceneAsync(sceneToLoad);        
     }
 
 

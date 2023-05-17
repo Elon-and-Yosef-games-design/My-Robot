@@ -4,18 +4,18 @@ using UnityEditor.AssetImporters;
 using UnityEngine;
 
 
-public class TestQuest1 : Quest
+public class TestQuest2 : Quest
 {
     void Start()
     {
-        title = "Scrap Hunter";
-        description = "As usual you like to go to the junkyard and search for Scraps.\nHow knows what you may find.";
+        title = "My first code!";
+        description = "Time to messe my hands with some codding\nsolve the following codding problems.";
         expReward = 10;
         coinReward = 5;
 
         //here we configure the mini quest for the general quest.
-        goals.Add(new ArrivaleGoal(this,"Go to the JunkYard", "JunkYard", false, 1));
-        goals.Add(new ArrivaleGoal(this,"Go to the first pile", "pile 1", false, 1));
+        goals.Add(new CoddingGoal(this, "write code that will print the \"hello world!\"", 
+                false, 0,new string [] {""},new string [] {"hello world!\r\n"}));
         //run the initlize for each of the quests
         goals.ForEach(g => g.Init());
         

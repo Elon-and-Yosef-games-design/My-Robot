@@ -34,7 +34,7 @@ public class controller_e : MonoBehaviour
     QuestGiver questgiver;
 
     [SerializeField]
-    InputAction Action = new InputAction();
+    InputAction action_key = new InputAction();
 
     [SerializeField]Animator animator;
 
@@ -54,6 +54,17 @@ public class controller_e : MonoBehaviour
         moveRight.Enable();
         run.Enable();
         open_quest.Enable();
+        action_key.Enable();
+    }
+    private void OnDisable()
+    {
+        moveUp.Disable();
+        moveDown.Disable();
+        moveLeft.Disable();
+        moveRight.Disable();
+        run.Disable();
+        open_quest.Disable();
+        action_key.Disable();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,7 +73,7 @@ public class controller_e : MonoBehaviour
         current_collision = collision;
         try
         {
-            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal") && collision.name.Equals("JunkYard"))
             {
                 Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
                 ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
@@ -124,7 +135,6 @@ public class controller_e : MonoBehaviour
         if (moveDown.IsPressed())
         {
             transform.position += new Vector3(0, -1 * multiplier_run * speed * Time.deltaTime, 0);
-            Debug.Log("Vertical" + Vertical);
            
         }
         if (moveLeft.IsPressed())
@@ -133,7 +143,7 @@ public class controller_e : MonoBehaviour
             transform.position += new Vector3(multiplier_run * speed * Time.deltaTime, 0, 0);
         if (open_quest.WasPressedThisFrame())
         {
-            if(questgiver.isOpen())
+            if (questgiver.isOpen())
             {
                 questgiver.close_window();
             }
@@ -142,7 +152,7 @@ public class controller_e : MonoBehaviour
                 questgiver.open_window();
             }
         }
-        if (Action.IsPressed())
+        if (action_key.WasPressedThisFrame())
         {
             Debug.Log("E was pressed!\n");
             try
@@ -156,10 +166,8 @@ public class controller_e : MonoBehaviour
             catch
             {
                 Debug.Log("dosent have quest");
-            }   
+            }  
         }
-        else
-        {
-        }
+       
     }
 }
