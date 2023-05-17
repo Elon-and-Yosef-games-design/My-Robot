@@ -37,6 +37,8 @@ public class controller_e : MonoBehaviour
     [SerializeField]
     InputAction Action = new InputAction();
 
+    [SerializeField]
+    InputAction open_instruction = new InputAction();
 
 
     int run_flag = 0;
@@ -55,22 +57,23 @@ public class controller_e : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collide");
+        // Debug.Log("collide");
 
-        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
-        {
-            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
-            ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
-        }
-        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
-        {
-            Debug.Log("press E to interact!\n");
-            Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
-            if (Action.WasPressedThisFrame())
-            {
-                ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
-            }
-        }
+        // if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        // {
+        //     Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
+        //     ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
+        // }
+        // if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        // {
+        //     Debug.Log("press E to interact!\n");
+        //     Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
+        //     if (Action.WasPressedThisFrame())
+        //     {
+        //         ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
+        //     }
+        // }
+
 
     }
 
