@@ -7,24 +7,47 @@ using Unity.VisualScripting;
 /// <summary>
 /// this is the system that give the quest for the player
 /// </summary>
-[System.Serializable]
 public class QuestGiver : MonoBehaviour
 {
+    [SerializeField]
     public List<string> quests = new List<string>();
     int i = 0;
+
+    
+    [SerializeField]
+    public Player player = null;
+
     [Tooltip("set the quest object that in the player")]
     public GameObject quest_object;
-    public Player player;
+
+    [SerializeField]
     public GameObject questWindow;
-    public TextMeshProUGUI title_text;
-    public TextMeshProUGUI discription_text;
-    public TextMeshProUGUI Goal_discrip_text;
-    public TextMeshProUGUI coin_text;
-    public GameObject coin_icon;    
+
+     TextMeshProUGUI title_text;
+     TextMeshProUGUI discription_text;
+     TextMeshProUGUI Goal_discrip_text;
+     TextMeshProUGUI coin_text;
+     GameObject coin_icon;    
+
     [Tooltip("no need to assigned")]
     public Quest current_quest;
 
-    
+
+    private void Start()
+    {
+        quest_object = player.transform.Find("quest").gameObject;
+        title_text = questWindow.transform.Find("Quest_Title").GetComponent<TextMeshProUGUI>();
+        discription_text = questWindow.transform.Find("Quest_Description").GetComponent<TextMeshProUGUI>();
+        Goal_discrip_text = questWindow.transform.Find("Task_box").transform.Find("Goal discription").GetComponent<TextMeshProUGUI>();
+        coin_text = questWindow.transform.Find("coin box").transform.Find("coin").GetComponent<TextMeshProUGUI>();
+        coin_icon = questWindow.transform.Find("coin box").gameObject;
+        AssigneQuest();
+    }
+    private void Update()
+    {
+        nextQuest();
+    }
+
     public void nextQuest()
     {
         if(current_quest.goals.Count > 0)
@@ -112,12 +135,5 @@ public class QuestGiver : MonoBehaviour
         questWindow.SetActive(false);
     }
 
-    private void Start()
-    {
-       AssigneQuest();
-    }
-    private void Update()
-    {
-        nextQuest();
-    }
+
 }

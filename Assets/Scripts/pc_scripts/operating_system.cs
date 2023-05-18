@@ -7,6 +7,7 @@ public class operating_system : MonoBehaviour
 
     [SerializeField] GameObject IDE_program;
     [SerializeField] GameObject Dark_Web;
+    [SerializeField] GameObject pyb_guide;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,10 @@ public class operating_system : MonoBehaviour
     {
         IDE_program.active = !IDE_program.active;
     }
-
+    public void on_off_pyb_guide()
+    {
+        pyb_guide.active = !pyb_guide.active;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -6,6 +6,7 @@ public class ArrivaleGoal : questGoal
 {
 
     public string area { get; set; }
+    string dialog_text_description;
     
     public override void Init()
     {
@@ -29,7 +30,15 @@ public class ArrivaleGoal : questGoal
         this.completed = completed;
         this.requierdAmount = requierdAmount;
     }
-
+    public ArrivaleGoal(Quest quest, string descritption, string dialog_text_description, string area, bool completed, int requierdAmount)
+    {
+        this.quest = quest;
+        this.description = descritption;
+        this.area = area;
+        this.completed = completed;
+        this.requierdAmount = requierdAmount;
+        this.dialog_text_description = dialog_text_description;
+    }
     /// <summary>
     /// this function is update the mission prograss when the player got to the requierd
     /// loaction.

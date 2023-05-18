@@ -13,6 +13,7 @@ public class CoddingGoal : questGoal
     StringWriter stringWriter = new StringWriter();
     string[] test_inputs;
     string[] test_outputs;
+    string dialog_text_description;
 
     public CoddingGoal(Quest quest, string descritption, bool completed, int currentAmount, string[] test_inputs, string[] test_outputs)
     {
@@ -21,6 +22,15 @@ public class CoddingGoal : questGoal
         this.currentAmout = currentAmount;
         this.test_inputs = test_inputs;
         this.test_outputs = test_outputs;
+    }
+    public CoddingGoal(Quest quest, string descritption, string dialog_text, bool completed, int currentAmount, string[] test_inputs, string[] test_outputs)
+    {
+        this.description = descritption;
+        this.completed = completed;
+        this.currentAmout = currentAmount;
+        this.test_inputs = test_inputs;
+        this.test_outputs = test_outputs;
+        this.dialog_text_description = dialog_text;
     }
     public override void Init()
     {
