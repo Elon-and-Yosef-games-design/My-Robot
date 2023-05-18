@@ -12,7 +12,7 @@ public class QuestGiver : MonoBehaviour
 {
     public List<string> quests = new List<string>();
     int i = 0;
-
+    [Tooltip("set the quest object that in the player")]
     public GameObject quest_object;
     public Player player;
     public GameObject questWindow;
@@ -20,10 +20,11 @@ public class QuestGiver : MonoBehaviour
     public TextMeshProUGUI discription_text;
     public TextMeshProUGUI Goal_discrip_text;
     public TextMeshProUGUI coin_text;
-    public GameObject coin_icon;
-
+    public GameObject coin_icon;    
+    [Tooltip("no need to assigned")]
     public Quest current_quest;
 
+    
     public void nextQuest()
     {
         if(current_quest.goals.Count > 0)

@@ -21,7 +21,6 @@ public class EnterComputer : MonoBehaviour
 
         if (collision.tag == "PC")
         {
-            Debug.Log("Player is now touching the computer.");
             enterAllowed = true;
 
             Debug.Log("enterAllowed  "+ enterAllowed);
