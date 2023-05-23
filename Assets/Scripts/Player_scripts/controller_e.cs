@@ -162,6 +162,10 @@ public class controller_e : MonoBehaviour
                     if (current_collision != null)
                         ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
                 }
+                if(current_collision.name.Equals("Robot"))
+                {
+                    GameObject.Find("Robot").GetComponent<Robot_interprater>().compile();
+                }
             }
             catch
             {

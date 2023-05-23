@@ -21,6 +21,8 @@ public class interprater_execution_system : MonoBehaviour
     [SerializeField] TMP_InputField stdout;
     [SerializeField] TMP_InputField stdin ;
     [SerializeField] float print_animation_duration = 0.5f;
+    QuestGiver questgiver;
+
 
     PythonSharp.Machine machine = new PythonSharp.Machine();
     StringWriter stringWriter = new StringWriter();
@@ -30,6 +32,7 @@ public class interprater_execution_system : MonoBehaviour
     private void Start()
     {
         machine.Output = stringWriter;
+        questgiver = GameObject.Find("Quest_giver").GetComponent<QuestGiver>();
     }
 
 
@@ -49,6 +52,26 @@ public class interprater_execution_system : MonoBehaviour
         stdout.text = ">>";
         ProcessFiles();
     }
+    IEnumerator upload_animation()
+    {
+        stringWriter.GetStringBuilder().Clear();
+        stdout.text = ">> uploading p1.py\n";
+        yield return new WaitForSeconds(print_animation_duration);
+        GameObject.Find("Robot").GetComponent<Robot_interprater>().upload_to_robot(input_str);
+        stdout.text += ">> ....\n";
+        stdout.text += ">> upload finished\n";
+        yield return new WaitForSeconds(print_animation_duration);
+        stdout.text = ">>";
+        if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+        {
+            ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived("uploaded");
+        }
+
+    }
+    public void upload_code()
+    {
+        StartCoroutine(upload_animation());
+    }
 
     public void read_input_editor(string s)
     {
@@ -64,7 +87,11 @@ public class interprater_execution_system : MonoBehaviour
         Parser parser = new Parser(input_str);
         ICommand command = parser.CompileCommandList();
         command.Execute(machine.Environment);
-        stdout.text = stringWriter.ToString();    
+        stdout.text = stringWriter.ToString();
+        if(questgiver.current_quest.goals[0].GetType().ToString().Equals("CoddingGoal"))
+        {
+            ((CoddingGoal)questgiver.current_quest.goals[0]).scriptPassedTest(input_str);
+        }
          
        // return hasfiles;
     }

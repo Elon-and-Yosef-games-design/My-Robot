@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: simple_lcd_output
   m_EditorClassIdentifier: 
   script_name: hello_world
-  code: 'string name = "Yosef"
+  code: 'name = "Elon"
 
 
-    print("hello my name is ", name)'
+    print("hello my name is", name)'
