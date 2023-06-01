@@ -13,6 +13,8 @@ public class QuestGiver : MonoBehaviour
     public List<string> quests = new List<string>();
     int i = 0;
 
+    [SerializeField]
+    int display_duration = 3;
     
     [SerializeField]
     public Player player = null;
@@ -32,7 +34,13 @@ public class QuestGiver : MonoBehaviour
     [Tooltip("no need to assigned")]
     public Quest current_quest;
 
+    QuestGiver instance;
 
+    private void Awake()
+    {
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
+    }
     private void Start()
     {
         quest_object = player.transform.Find("quest").gameObject;
@@ -42,6 +50,9 @@ public class QuestGiver : MonoBehaviour
         coin_text = questWindow.transform.Find("coin box").transform.Find("coin").GetComponent<TextMeshProUGUI>();
         coin_icon = questWindow.transform.Find("coin box").gameObject;
         AssigneQuest();
+        nextQuest();
+
+        StartCoroutine(new_misson());
     }
     private void Update()
     {
@@ -78,26 +89,14 @@ public class QuestGiver : MonoBehaviour
     
     void AssigneQuest()
     {
-        /*try
-        {
-            if (quest_object.GetComponent<Quest>().name.Equals(quests[i]))
-            {
-                Debug.Log("assigned quest " + quests[i]);
-            }
-        }
-        catch
-        {
-
-        }*/
-  
         current_quest = (Quest)quest_object.AddComponent(System.Type.GetType(quests[i]));//this will assigned the quest from the list to the quest object
     }
 
     IEnumerator new_misson()
     {
         open_window();
-        yield return new WaitForSeconds(3);
-        close_window();
+        yield return new WaitForSeconds(display_duration);
+        //close_window();
     }
 
     public bool isOpen()

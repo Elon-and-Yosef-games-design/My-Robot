@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/pc_scripts/pyb_guide_f.meta
+guid: 7bbd2e772beb4ae40a45888489d8095a
+folderAsset: yes
+========
 guid: 63ca8d3f70a1e4a23bf7b9932b12754c
+>>>>>>>> origin/yosef-workflow:Assets/Scenes/level_disigne/city.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

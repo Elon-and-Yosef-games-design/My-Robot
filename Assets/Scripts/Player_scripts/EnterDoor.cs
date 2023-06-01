@@ -39,6 +39,7 @@ public class EnterDoor : MonoBehaviour
     {
         if (enterAllowed && Input.GetKey(KeyCode.Return))
         {
+
             SceneManager.LoadScene(sceneToLoad);
         }
     }

@@ -162,6 +162,17 @@ public class controller_e : MonoBehaviour
                     if (current_collision != null)
                         ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
                 }
+                if(current_collision.name.Equals("Robot"))
+                {
+                    GameObject.Find("Robot").GetComponent<Robot_interprater>().compile();
+                }
+                if(current_collision.tag.Equals("spawn_point"))
+                {
+                    string spawn_name = current_collision.name.EndsWith('1') ? current_collision.name.Substring(0, current_collision.name.Length - 1) + "2" : current_collision.name.Substring(0, current_collision.name.Length - 1) + "1";
+                    Debug.Log("spawn name: " + spawn_name);
+                    GameObject spawn_point = GameObject.Find("Spawn_points").transform.Find(spawn_name).gameObject;
+                    transform.position = spawn_point.transform.position;
+                }
             }
             catch
             {
