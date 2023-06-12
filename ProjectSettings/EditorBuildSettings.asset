@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_disigne/main_world.unity
     guid: 0da06a7191d7580488722b68c8ac8c32
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pc.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/other/Section2.unity
     guid: 3bbb3dff7ba47154d882c9b72f6185fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/level_disigne/hollway.unity
     guid: f85932bccaf464256ac954c8baa141b5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/level_disigne/dump.unity
     guid: cdec8d8c5c0424f7d945c5001d234412
   m_configObjects:

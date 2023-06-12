@@ -25,6 +25,9 @@ public class questGoal
         }
     }
 
+    /// <summary>
+    /// make the mission complete
+    /// </summary>
     public void complete()
     {
         

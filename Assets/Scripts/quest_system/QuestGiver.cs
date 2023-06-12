@@ -14,7 +14,7 @@ public class QuestGiver : MonoBehaviour
     int i = 0;
 
     [SerializeField]
-    int display_duration = 3;
+    int display_duration = 1;
     
     [SerializeField]
     public Player player = null;
@@ -52,7 +52,7 @@ public class QuestGiver : MonoBehaviour
         AssigneQuest();
         nextQuest();
 
-        StartCoroutine(new_misson());
+        StartCoroutine(first_mission());
     }
     private void Update()
     {
@@ -67,7 +67,7 @@ public class QuestGiver : MonoBehaviour
                 Debug.Log("goal completed");
                 //StartCoroutine(new_misson());
                 
-                if (current_quest.Completed)
+                if (current_quest.Completed)// check if the all of the mini tasks was finished
                 {
                     current_quest.GiveRewarde();
 
@@ -96,6 +96,15 @@ public class QuestGiver : MonoBehaviour
     {
         open_window();
         yield return new WaitForSeconds(display_duration);
+      
+        //close_window();
+    }
+
+    IEnumerator first_mission()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        open_window();
         //close_window();
     }
 

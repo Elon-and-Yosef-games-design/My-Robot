@@ -73,16 +73,16 @@ public class controller_e : MonoBehaviour
         current_collision = collision;
         try
         {
-            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal") && collision.name.Equals("JunkYard"))
+            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal") && !collision.tag.Equals("interactable"))
             {
                 Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
                 ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(collision.name);
+
             }
-            if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
+            else if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
             {
                 Debug.Log("press E to interact!\n");
                 Debug.Log("type of goal: " + questgiver.current_quest.goals[0].GetType());
-          
             }
         }
         catch
@@ -95,6 +95,9 @@ public class controller_e : MonoBehaviour
     {
         current_collision = null;
     }
+
+
+
 
     private void Start()
     {
@@ -159,7 +162,11 @@ public class controller_e : MonoBehaviour
             {
                 if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
                 {
-                    if (current_collision != null)
+                    if (current_collision.name.Equals("pile_with_nothing"))
+                    {
+                        Debug.Log("message you found nothing");
+                    }
+                    else if (current_collision != null)
                         ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
                 }
                 if(current_collision.name.Equals("Robot"))
@@ -173,6 +180,8 @@ public class controller_e : MonoBehaviour
                     GameObject spawn_point = GameObject.Find("Spawn_points").transform.Find(spawn_name).gameObject;
                     transform.position = spawn_point.transform.position;
                 }
+                
+
             }
             catch
             {

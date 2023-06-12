@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PC
   - spawn_point
+  - interactable
   layers:
   - Default
   - TransparentFX
