@@ -8,6 +8,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI coin;
+    [SerializeField] TextMeshProUGUI Exp;
+
 
     public int health = 100;
     public int maxHealth = 100;
@@ -17,5 +19,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         coin.text = coins.ToString();
+        Exp.text = exp.ToString();
     }
 }

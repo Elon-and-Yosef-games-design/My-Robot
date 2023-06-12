@@ -21,6 +21,7 @@ public class Quest : MonoBehaviour
 
     public bool Completed;
 
+    [SerializeField] public DialogueManager dialogue_manager;
 
     /// <summary>
     /// check if all the Goals were achived

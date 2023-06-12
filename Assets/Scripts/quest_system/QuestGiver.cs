@@ -36,6 +36,8 @@ public class QuestGiver : MonoBehaviour
 
     QuestGiver instance;
 
+    [SerializeField] public DialogueManager dialogue_manager;
+
     private void Awake()
     {
         instance = this;
@@ -90,13 +92,15 @@ public class QuestGiver : MonoBehaviour
     void AssigneQuest()
     {
         current_quest = (Quest)quest_object.AddComponent(System.Type.GetType(quests[i]));//this will assigned the quest from the list to the quest object
+        current_quest.dialogue_manager = dialogue_manager;
     }
 
     IEnumerator new_misson()
     {
+        yield return new WaitForSeconds(0.5f);
         open_window();
         yield return new WaitForSeconds(display_duration);
-      
+        
         //close_window();
     }
 
