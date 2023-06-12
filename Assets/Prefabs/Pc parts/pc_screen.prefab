@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df666d6472f84640ad12c7b259bb143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contant: {fileID: 0}
+  scroll_view: {fileID: 525907936808317875}
   button: {fileID: 7363937228056048272, guid: ebbae1cac29615e499517b3b6629943e, type: 3}
   questgiver: {fileID: 0}
 --- !u!1 &3065801077332383213

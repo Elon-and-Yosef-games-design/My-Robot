@@ -162,12 +162,44 @@ public class controller_e : MonoBehaviour
             {
                 if (questgiver.current_quest.goals[0].GetType().ToString().Equals("ArrivaleGoal"))
                 {
-                    if (current_collision.name.Equals("pile_with_nothing"))
+                    if (current_collision.name.Equals("pile_with_robot"))
                     {
-                        Debug.Log("message you found nothing");
+                        DialogueManager.Instance.StartDialogue(new Dialogue
+                        {
+                            name = "Me",
+                            sentences = new string[] {"It's unbelivable!!!", "I found a ROBOT!","Who may thorw something that expensive and illegal"
+                            , "I sould take it home and see what it can do"}
+                        });
+
+                        ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
+                    }
+                    else if (current_collision.name.Equals("pile_with_nothing"))
+                    {
+                        int rand_coin_find = Random.Range(0, 100);
+                        if(rand_coin_find < 20)
+                        {
+                            DialogueManager.Instance.StartDialogue(new Dialogue
+                            {
+                                name = "Me",
+                                sentences = new string[] { "Nice I found some crypto wallet.", "It has "+rand_coin_find+" bits.", "let's keep looking for more goods."}
+                            });
+                            GetComponent<Player>().coins += rand_coin_find;
+                        }else
+                        {
+                            DialogueManager.Instance.StartDialogue(new Dialogue
+                            {
+                                name = "Me",
+                                sentences = new string[] { "seems nothing itresting here" }
+                            });
+                        }
+                
+
+                        ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
                     }
                     else if (current_collision != null)
-                        ((ArrivaleGoal)questgiver.current_quest.goals[0]).arrived(current_collision.name);
+                    {
+
+                    }
                 }
                 if(current_collision.name.Equals("Robot"))
                 {

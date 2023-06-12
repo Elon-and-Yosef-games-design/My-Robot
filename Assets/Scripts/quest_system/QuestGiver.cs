@@ -36,6 +36,7 @@ public class QuestGiver : MonoBehaviour
 
     QuestGiver instance;
 
+
     private void Awake()
     {
         instance = this;
@@ -94,9 +95,10 @@ public class QuestGiver : MonoBehaviour
 
     IEnumerator new_misson()
     {
+        yield return new WaitForSeconds(0.5f);
         open_window();
         yield return new WaitForSeconds(display_duration);
-      
+        
         //close_window();
     }
 
