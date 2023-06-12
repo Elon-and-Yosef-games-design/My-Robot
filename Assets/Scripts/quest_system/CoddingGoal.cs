@@ -1,9 +1,11 @@
 using PythonSharp.Commands;
 using PythonSharp.Compiler;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem.Users;
 
 public class CoddingGoal : questGoal
@@ -14,6 +16,9 @@ public class CoddingGoal : questGoal
     string[] test_inputs;
     string[] test_outputs;
     string dialog_text_description;
+    //public UnityEvent<GameObject> OnScriptPassedTest;
+    public event EventHandler dialogue_m;
+    public class event_args : EventArgs { public Dialogue d; }
 
     public CoddingGoal(Quest quest, string descritption, bool completed, int currentAmount, string[] test_inputs, string[] test_outputs)
     {
@@ -56,8 +61,9 @@ public class CoddingGoal : questGoal
             else
             {
                 dialogue.name = "Codding Error";
-                dialogue.sentences = new string [] { "test was failed.", " i was spuose to get: " + output + ". \n but for some reson i get:" + stringWriter.ToString() };
-                this.quest.dialogue_manager.StartDialogue(dialogue);
+                dialogue.sentences = new string [] { "test was failed.", "i was spuose to get: " + output + ".","but for some reson i get:" + stringWriter.ToString() };
+                //this.quest.dialogue_manager.StartDialogue(dialogue);
+                DialogueManager.Instance.StartDialogue(dialogue);
                 Debug.LogAssertion("test was failed." + " i was spuose to get: " + output+". \n but for some reson i get:"+ stringWriter.ToString());
                 return;
             }

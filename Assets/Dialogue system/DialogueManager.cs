@@ -12,10 +12,28 @@ public class DialogueManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	// Use this for initialization
-	void Start () {
+	public static DialogueManager Instance { get; set; }
+
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+		{
+			//Destroy(gameObject);
+		}
+		else
+		{
+			Instance = this;
+		}
+    }
+
+    // Use this for initialization
+    void Start () {
 		sentences = new Queue<string>();
+		Quest c = GetComponent<Quest>();
+		//c.dialogue_m += StartDialogueEvent;
 	}
+
+
 
 	public void StartDialogue (Dialogue dialogue)
 	{
@@ -35,6 +53,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public void DisplayNextSentence ()
 	{
+		Debug.Log("pressed next");
 		if (sentences.Count == 0)
 		{
 			EndDialogue();
