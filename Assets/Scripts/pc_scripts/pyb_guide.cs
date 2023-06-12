@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class pyb_guide : MonoBehaviour
 {
     GameObject guide_list_view;
-    [SerializeField] GameObject contant;
+    [SerializeField] GameObject scroll_view;
     [SerializeField] Button button;
     [SerializeField]
     QuestGiver questgiver;
@@ -36,17 +36,21 @@ public class pyb_guide : MonoBehaviour
 
         if (prefab != null)
         {
-            GameObject child = Instantiate(prefab,contant.transform);
+            
+
+           GameObject child = Instantiate(prefab, scroll_view.transform.GetChild(0));
             RectTransform childRect = child.GetComponent<RectTransform>();
+            scroll_view.GetComponent<ScrollRect>().content = childRect;
+
             // קבלת הRectTransform של האב
-            RectTransform parentRect = contant.GetComponent<RectTransform>();
+            //  RectTransform parentRect = contant.GetComponent<RectTransform>();
             // חישוב הPosition של הprefab במרחב המקומי של האב
-            Vector2 childPos = new Vector2(parentRect.position.x - parentRect.rect.width / 2f, parentRect.position.y - parentRect.rect.height / 2f);
+            //Vector2 childPos = new Vector2(parentRect.position.x - parentRect.rect.width / 2f, parentRect.position.y + parentRect.rect.height / 2f);
             // המרת הPosition של הprefab ממרחב המקומי למרחב העולם
-            Vector3 worldPos = parentRect.TransformPoint(childPos);
+            //Vector3 worldPos = parentRect.TransformPoint(childPos);
             // שינוי הPosition של הprefab לPosition שחישבנו
-            childRect.position = worldPos;
-        
+            //childRect.position = worldPos;
+
 
         }
         else
