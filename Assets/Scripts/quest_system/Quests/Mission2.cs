@@ -20,7 +20,7 @@ public class Mission2 : Quest
             "befor i start anything i should make sure i remmember how to code.\n" +
             "I got from the goverment a guide for the same languge the robot works with", "print function", false, 0));
         goals.Add(new CoddingGoal(this, "open the PyB compiler in the computer and write a program that print to the screen \"hello world\"\nand run it with the RUN button.",
-                                        false, 0,new string[] {},new string[] {"hello world\r\n"}));
+                                        false, 0,new string[] {},new string[] {"hello world\n"}));
 
         goals.Add(new ArrivaleGoal(this, "upload the script to the robot with the UPLOAD button in the IDE.",
             "befor i start anything i should make sure i remmember how to code.\n" +
@@ -31,20 +31,11 @@ public class Mission2 : Quest
 
         //run the initlize for each of the quests
         goals.ForEach(g => g.Init());
+        Robot_controller.instance.turn_robot_on();
     }
 
     private void Update()
     {
-        //Debug.Log("counts = " + goals.Count);
-       if (robot != null)
-        {
-            robot = GameObject.Find("Robot");
-        }
-       /*else
-            if (robot.active ==  false)
-            {
-            
-                robot.SetActive(true);
-            }*/
+    
     }
 }
