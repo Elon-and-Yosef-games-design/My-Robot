@@ -17,10 +17,13 @@ public class EnemyBehavior : MonoBehaviour
     private bool isChasing = false;
     private Player playerScript;
 
+    private Animator animator;
+
     void Start()
     {
         //Debug.Log("hasVisitedGarbage is " + SceneTracker.hasVisitedGarbage);
         playerScript = player.GetComponent<Player>();
+        animator = GetComponent<Animator>();
         if (SceneTracker.hasVisitedGarbage)
         {
             // spawn enemies and set them to attack the player
@@ -45,6 +48,8 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        Vector3 directionToPlayer = (player.position - transform.position).normalized;
+        Vector3 targetPosition = player.position - directionToPlayer * 0.5f; // Adjust the multiplier as needed
 
         if (isChasing)
         {
@@ -55,11 +60,12 @@ public class EnemyBehavior : MonoBehaviour
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, chaseSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, chaseSpeed * Time.deltaTime);
 
                 if (distanceToPlayer <= attackRadius)
                 {
                     playerScript.TakeDamage(attackDamage);
+                    animator.SetTrigger("Attack");
                 }
             }
         }
@@ -68,7 +74,6 @@ public class EnemyBehavior : MonoBehaviour
             Debug.Log("hasVisitedGarbage is " + SceneTracker.hasVisitedGarbage);
             if (distanceToPlayer <= detectionRadius && SceneTracker.hasVisitedGarbage)
             {
-                Debug.Log("Entered the if ");
                 isChasing = true;
             }
             else
@@ -77,4 +82,5 @@ public class EnemyBehavior : MonoBehaviour
             }
         }
     }
+
 }
